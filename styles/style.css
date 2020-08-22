@@ -120,11 +120,12 @@
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
-}
-
-.two-columns__paragraph {
   margin-top: 0;
   margin-bottom: 30px;
+}
+
+.two-columns__paragraph:last-child {
+  margin-bottom: 0;
 }
 
 .two-columns__span-accent {
@@ -179,12 +180,6 @@
 .table__cell {
   width: 250px;
   margin: 60px 0px 0px 0px;
-}
-
-
-
-.table_theme_dark:nth-child(-2n+1) {
-  margin-bottom: 80px;
 }
 
 .table__heading {
@@ -290,6 +285,7 @@
   padding: 60px 0px 40px 0px;
   min-height: 350px;
   display: flex;
+  box-sizing: border-box;
 }
 
 .footer__columns {
